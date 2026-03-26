@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+</head>
+<body>
+    <header>
+    <h1>Mi Blog Personal</h1>
+    <p>Compartiendo conocimiento sobre desarrollo web</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#articulos">Artículos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#sobre-mi">Sobre mí</a>
+    </nav>
+</header>
+
+<main>
+    <section id="articulos">
+        <h2>Artículos Recientes</h2>
+
+        <article>
+            <h2>¿Qué es HTML Semántico?</h2>
+            <p>Publicado el <strong>4 de marzo de 2026</strong></p>
+            <p>HTML semántico utiliza etiquetas que describen
+            el significado del contenido, no solo su apariencia.
+            Esto mejora la accesibilidad, el SEO y la
+            mantenibilidad del código.</p>
+            <img src="https://picsum.photos/600/300"
+                alt="Ejemplo de código HTML semántico">
+            <p><em>Tags: HTML5, semántica, accesibilidad</em></p>
+        </article>
+
+        <article>
+            <h2>Introducción a los Formularios HTML</h2>
+            <p>Publicado el <strong>3 de marzo de 2026</strong></p>
+            <p>Los formularios son la forma principal de recopilar
+            datos del usuario en la web. HTML5 incluye validación
+            nativa que facilita el trabajo del desarrollador.</p>
+            <img src="https://picsum.photos/600/301"
+                alt="Formulario de ejemplo en HTML">
+        </article>
+    <section id="contacto">
+        <h2>Contáctame</h2>
+
+        <form action="/contacto" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre"
+                required placeholder="Tu nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"
+                required placeholder="correo@ejemplo.com">
+            <label for="telefono">Teléfono:</label>
+            <input
+            type="tel"
+            id="telefono"
+            required placeholder="+56937677784"
+            pattern="\+569\{0-9}{8}"
+            requeride>
+        
+
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto">
+                <option value="">Selecciona un tema...</option>
+                <option value="consulta">Consulta general</option>
+                <option value="colaboracion">Colaboración</option>
+                <option value="error">Reportar error</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5"
+                    required minlength="10"
+                    placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+    <aside>
+    <h2 id="sobre-mi">Sobre el Autor</h2>
+    <p>Soy estudiante de <strong>INACAP</strong> aprendiendo
+    desarrollo web Front End. Me apasiona crear sitios
+    accesibles y bien estructurados.</p>
+
+    <h3>Categorías</h3>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Accesibilidad</li>
+    </ul>
+
+    <h3>Enlaces Útiles</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/es/"
+            target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/"
+            target="_blank">W3Schools</a></li>
+    </ul>
+</aside>
+<footer>
+    <p>Creado por <strong>Skarlet Sánchez</strong> - INACAP 2026</p>
+    <p>Sígueme en redes:</p>
+    <ul>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+    </ul>
+    <hr>
+    <p><small>© 2026 Mi Blog Personal. Todos los derechos reservados.</small></p>
+</footer>
+
+</main>
+
+
+    </header>
+</body>
+</html>
