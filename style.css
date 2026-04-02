@@ -1,0 +1,234 @@
+/* ========== RESET BÁSICO ========== */
+  *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+/*Lit deja TODO EN 0, para evitar problemas de márgenes y padding entre navegadores*/
+
+/* ========== VARIABLES CSS ========== */
+  :root {
+      --color-primary: #028090;
+      --color-accent: #38BDF8;
+      --color-bg: #F8FAFC;
+      --color-text: #1E293B;
+      --color-muted: #64748B;
+      --font-main: Arial, Helvetica, sans-serif;
+      --font-code: Consolas, "Courier New", monospace;
+  }
+/* ========== ESTILOS BASE ========== */
+  body {
+      font-family: var(--font-main);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+  }
+/*Estilizar el Header y Navegación*/
+ /* ========== HEADER ========== */
+  header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+  }
+  
+  header p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+  }
+/* ========== NAVEGACIÓN ========== */
+  nav {
+      background-color: #026670;
+      padding: 10px 0;
+      text-align: center;
+  }
+  
+  nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+/*Estilizar Main, Articles y Aside*/
+/* ========== CONTENIDO PRINCIPAL ========== */
+  main {
+      max-width: 960px; 
+      margin: 30px auto; /*max y margin automático para centrar el contenido*/
+      padding: 0 20px; /*padding para dar espacio a los lados en pantallas pequeñas*/
+  }
+  
+  section {
+      margin-bottom: 30px;
+  }
+  
+  article {
+      background-color: white;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  article h3 {
+      color: var(--color-primary);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+  }
+
+ /* ========== ASIDE ========== */
+  aside {
+      background-color: #F0FDFA;
+      border-left: 4px solid var(--color-primary);
+      padding: 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 20px;
+  }
+  
+  aside h3 {
+      color: var(--color-primary);
+      margin-bottom: 10px;
+  }
+/*Estilizar el formulario de contacto*/
+/* ========== FORMULARIO DE CONTACTO ========== */
+form {
+      background-color: white;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 30px;
+      max-width: 600px;
+    }
+  
+  form h3 {
+      color: var(--color-primary);
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+  
+  label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: var(--color-text);
+      font-size: 0.9rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #CBD5E1;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: var(--font-main);
+      margin-bottom: 15px;
+      transition: border-color 0.3s ease;
+    }
+  
+  /* Estado :focus - destaca el campo activo */
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(2, 128, 144, 0.15);
+    }
+/* ========== BOTÓN DE ENVÍO ========== */
+    button[type="submit"] {
+        background-color: var(--color-primary);
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer; /*cambia el cursor al pasar sobre el botón*/
+        transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover { /*efecto hover para el botón de envío*/
+      background-color: #026670;
+      transform: translateY(-2px); /*pequeño efecto de elevación al hacer hover*/
+      box-shadow: 0 4px 12px rgba(2, 128, 144, 0.3);
+    }
+ 
+    /*Estilizar el Footer*/
+/* ========== FOOTER ========== */
+footer { /*estilos para el pie de página*/
+      background-color: var(--color-primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.85rem;
+  }
+  
+  footer a { /*estilos para los enlaces dentro del pie de página*/
+      color: var(--color-accent);
+      text-decoration: none;
+  }
+  
+  footer a:hover { /*efecto hover para los enlaces del pie de página*/
+      text-decoration: underline;
+  }
+
+  /*Tipografia, Encabezados y Enlaces*/
+  /* ========== TIPOGRAFÍA GLOBAL ========== */
+  h2 {
+      color: var(--color-primary);
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E2E8F0;
+  }
+  
+  p {
+      margin-bottom: 12px;
+  }
+  
+  a {
+      color: var(--color-primary);
+      transition: color 0.3s ease;
+  }
+  
+  a:hover {
+      color: var(--color-accent);
+  }
+  
+  /* Listas dentro de articles */
+  article ul, article ol {
+    padding-left: 20px;
+      margin-bottom: 12px;
+  }
+  
+  article li {
+      margin-bottom: 5px;
+  }
+  /*Hover en Articles*/
+  article:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+  }
+  /*Degradado en header*/
+  header {
+    background: linear-gradient(135deg, #028090, #023570);
+  }
+  /*Google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Noto+Sans+Meroitic&display=swap');
+    body {
+        font-family: "Momo Signature", cursive !important;
+    }
+
