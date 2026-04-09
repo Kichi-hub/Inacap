@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.bitcount-grid-double-uno {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    background: rgba(127, 255, 212, 0.596);
+    font-size: 60px;
+}
+
+
+.contenerdor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(43, 122, 226, 0.349);
+    gap: 20px;
+}
+
+
+
+.cinzel-dos {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar{
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: rgba(0, 48, 204, 0.651);
+
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    font-size: 50px;
+    color: white;
+}
+
+.navlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.navlink a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+.navlink a:hover{
+    color: rgba(22, 20, 143, 0.651);
+    transition: 0.3s;
+}
